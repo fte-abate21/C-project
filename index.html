@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethiopian Orthodox Church</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ethiopian Orthodox Church</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('services')">Services</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="showSection('borrow')">Borrow Bible</button>
+      <button onclick="toggleDarkMode()">🌙/☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/church.jpg" alt="Ethiopian Orthodox Church" class="main-image" />
+
+    <section id="home" class="content-section">
+      <h2>Welcome</h2>
+      <p>The Ethiopian Orthodox Tewahedo Church is one of the oldest Christian churches in the world. It plays a vital role in the spiritual, cultural, and historical life of the Ethiopian people.</p>
+    </section>
+
+    <section id="about" class="content-section hidden">
+      <h2>About the Church</h2>
+      <p>The church was established in the 4th century and has preserved ancient traditions of Christianity. It follows ancient liturgy, teaches values of peace and love, and celebrates many unique holidays like Meskel, Timket, and Fasika.</p>
+    </section>
+
+    <section id="services" class="content-section hidden">
+      <h2>Services</h2>
+      <ul>
+        <li>Weekly Mass and Holy Communion</li>
+        <li>Confession and Spiritual Guidance</li>
+        <li>Bible Study Programs</li>
+        <li>Church Choir and Youth Fellowship</li>
+        <li>Charity and Community Service</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section hidden">
+      <h2>Contact Us</h2>
+      <p>Email: orthodoxchurch@example.com</p>
+      <p>Phone: +251 912 345678</p>
+      <p>Address: Addis Ababa, Ethiopia</p>
+    </section>
+
+    <section id="borrow" class="content-section hidden">
+      <h2>Borrow a Bible</h2>
+      <form id="borrowForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="reason">Why do you want to borrow the Bible?</label>
+        <textarea id="reason" rows="3" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="confirmationMessage" class="hidden">Thank you! Your request has been submitted. God bless you.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
